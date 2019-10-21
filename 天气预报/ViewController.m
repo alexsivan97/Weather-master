@@ -44,10 +44,10 @@
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.contentSize = CGSizeMake(W, H * 0.9);
     _scrollView.delegate = self;
-   /*
+   
     _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:_addButton];
-    _addButton.frame = CGRectMake(W * 0.8, H * 0.9, 55, 50);
+    _addButton.frame = CGRectMake(W * 0.86, H * 0.93, 35, 35);
     _addButton.backgroundColor = [UIColor clearColor];
     [_addButton setImage:[UIImage imageNamed:@"菜单栏.png"] forState:UIControlStateNormal];
     [_addButton addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchDown];
@@ -55,10 +55,10 @@
     _pageControl = [[UIPageControl alloc] init];
     [self.view addSubview:_pageControl];
     _pageControl.numberOfPages = i;
-    _pageControl.center = CGPointMake(W / 2, H * 0.93);
+    _pageControl.center = CGPointMake(W / 2, H * 0.98);
     _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     _pageControl.pageIndicatorTintColor = [UIColor grayColor];
-    */
+    
     d = 0;
     a = 0;
     _cityArray = [[NSMutableArray alloc] init];
@@ -126,7 +126,7 @@
 }
 
 - (void)creatInit {
-    WeatherView *view = [[WeatherView alloc] initWithFrame:CGRectMake(0, 0, W, H * 0.99) CityName:@"大兴"];
+    WeatherView *view = [[WeatherView alloc] initWithFrame:CGRectMake(0, 0, W, H * 0.92) CityName:@"大兴"];
     [_scrollView addSubview:view];
     [_cityArray addObject:@"大兴"];
 //    NSLog(@"cityArray = %@", _cityArray);

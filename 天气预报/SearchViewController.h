@@ -32,6 +32,10 @@ NSURLSessionDelegate
 @property (nonatomic, strong) UIButton *cancelButton;
 @property id <searchDelegate> searchdelegate;
 
+/*yzy add part*/
+@property (nonatomic, strong) UILabel *reminderLabel;
+/*yzy add part*/
+
 @end
 
 NS_ASSUME_NONNULL_END

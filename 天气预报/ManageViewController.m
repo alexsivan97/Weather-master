@@ -31,7 +31,7 @@
     
     _addButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.view addSubview:_addButton];
-    _addButton.frame = CGRectMake(W * 0.8, H * 0.9, 55, 50);
+    _addButton.frame = CGRectMake(W * 0.83, H * 0.92, 40, 40);
     _addButton.backgroundColor = [UIColor clearColor];
     UIImage *addImage = [[UIImage imageNamed:@"加.png"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [_addButton setImage:addImage forState:UIControlStateNormal];

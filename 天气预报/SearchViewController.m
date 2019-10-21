@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 
+
 @interface SearchViewController ()
 
 @end
@@ -22,6 +23,7 @@
     UIImageView *backImageView = [[UIImageView alloc] initWithImage:backImage];
     backImageView.frame = self.view.bounds;
     [self.view insertSubview:backImageView atIndex:0];
+ 
     
     _textField = [[UITextField alloc] init];
     _textField.delegate = self;
@@ -137,7 +139,7 @@
 
 - (void)creatTableView {
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width, 500) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 150, [UIScreen mainScreen].bounds.size.width, 200) style:UITableViewStylePlain];
     [self.view addSubview:_tableView];
     _tableView.delegate = self;
     _tableView.dataSource = self;
